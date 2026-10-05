@@ -1,0 +1,473 @@
+/* ==========================================================
+   GENERATE QUOTE MENU
+   Always yellow in every state.
+   No background color.
+========================================================== */
+
+#adminmenu #toplevel_page_evodent-generate-quote > a {
+	background: transparent !important;
+	color: #f0b429 !important;
+	font-weight: 700 !important;
+}
+
+#adminmenu #toplevel_page_evodent-generate-quote .wp-menu-name {
+	color: #f0b429 !important;
+	font-weight: 700 !important;
+}
+
+#adminmenu #toplevel_page_evodent-generate-quote .wp-menu-image:before {
+	color: #f0b429 !important;
+}
+
+/* Hover */
+#adminmenu #toplevel_page_evodent-generate-quote > a:hover {
+	background: transparent !important;
+	color: #f0b429 !important;
+}
+
+#adminmenu #toplevel_page_evodent-generate-quote > a:hover .wp-menu-name {
+	color: #f0b429 !important;
+}
+
+#adminmenu #toplevel_page_evodent-generate-quote > a:hover .wp-menu-image:before {
+	color: #f0b429 !important;
+}
+
+/* Selected */
+#adminmenu #toplevel_page_evodent-generate-quote.current > a,
+#adminmenu #toplevel_page_evodent-generate-quote.wp-has-current-submenu > a {
+	background: #3858e9 !important;
+	color: #f0b429 !important;
+}
+
+#adminmenu #toplevel_page_evodent-generate-quote.current .wp-menu-name,
+#adminmenu #toplevel_page_evodent-generate-quote.wp-has-current-submenu .wp-menu-name {
+	color: #f0b429 !important;
+}
+
+#adminmenu #toplevel_page_evodent-generate-quote.current .wp-menu-image:before,
+#adminmenu #toplevel_page_evodent-generate-quote.wp-has-current-submenu .wp-menu-image:before {
+	color: #f0b429 !important;
+}
+
+/* ==========================================================
+   QUOTE TYPE
+========================================================== */
+
+.evodent-quote-type-options {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.evodent-quote-type-option {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	min-width: 260px;
+	padding: 14px 18px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #fff;
+	cursor: pointer;
+	transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.evodent-quote-type-option:hover {
+	border-color: #2271b1;
+}
+
+.evodent-quote-type-option input[type="radio"] {
+	margin-top: 3px;
+}
+
+.evodent-quote-type-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.evodent-quote-type-content strong {
+	color: #1d2327;
+	font-size: 14px;
+}
+
+.evodent-quote-type-content small {
+	color: #646970;
+	margin-top: 2px;
+}
+
+/* ==========================================================
+   CARDS & LAYOUT
+========================================================== */
+
+.evodent-quote-wrap {
+	max-width: 1500px;
+}
+
+.evodent-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+	margin-top: 20px;
+	border-radius: 4px;
+}
+
+.evodent-card-header {
+	padding: 14px 20px;
+	border-bottom: 1px solid #c3c4c7;
+	background: #f6f7f7;
+}
+
+.evodent-card-header h2 {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.evodent-card-body {
+	padding: 20px;
+}
+
+.evodent-form-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 16px 24px;
+}
+
+.evodent-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.evodent-field label {
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.evodent-field .required {
+	color: #d63638;
+}
+
+.evodent-field-full {
+	grid-column: 1 / -1;
+}
+
+.evodent-quote-number {
+	display: flex;
+	align-items: center;
+}
+
+.evodent-quote-prefix {
+	background: #f0f0f1;
+	border: 1px solid #8c8f94;
+	border-right: 0;
+	padding: 0 10px;
+	height: 37px;
+    width: 144px;
+	line-height: 28px;
+	font-size: 13px;
+	color: #131516;
+	border-radius: 4px 0 0 4px;
+}
+
+.evodent-quote-number input {
+	border-radius: 0 4px 4px 0;
+	width: 100px;
+}
+
+.evodent-validity-field,
+.evodent-dispatch-field {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.evodent-validity-field input {
+	width: 90px;
+}
+
+.evodent-dispatch-field span {
+	color: #646970;
+	font-size: 13px;
+}
+
+/* ==========================================================
+   NOTICES
+========================================================== */
+
+.evodent-quote-notice {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 12px 16px;
+	background: #e5f5fa;
+	border-left: 4px solid #00a0d2;
+	margin-top: 20px;
+	border-radius: 2px;
+}
+
+.evodent-quote-notice .dashicons {
+	color: #00a0d2;
+	margin-top: 2px;
+}
+
+.evodent-quote-notice p {
+	margin: 4px 0 0;
+}
+
+.evodent-quote-notice-warning {
+	background-color: #fef8ee !important;
+	border-left-color: #f0b429 !important;
+}
+
+.evodent-quote-notice-warning .dashicons {
+	color: #de911d !important;
+}
+
+
+
+.evodent-intl-curr-symbol {
+	font-weight: 700;
+	margin-right: 2px;
+}
+
+/* ==========================================================
+   PRODUCT TABLE
+========================================================== */
+
+.evodent-items-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.evodent-items-body {
+	padding: 0;
+}
+
+.evodent-product-table-wrapper {
+	overflow-x: auto;
+}
+
+.evodent-product-table {
+	margin: 0;
+	border: 0;
+	box-shadow: none;
+}
+
+.evodent-product-table th {
+	background: #f6f7f7;
+	padding: 10px 12px;
+}
+
+.evodent-product-table td {
+	padding: 10px 12px;
+	vertical-align: middle;
+}
+
+.evodent-serial {
+	font-weight: 600;
+	text-align: center;
+	color: #646970;
+}
+
+.evodent-product-table input[type="text"],
+.evodent-product-table input[type="number"] {
+	width: 100%;
+}
+
+.evodent-remove-product,
+.evodent-intl-remove-product {
+	color: #b32d2e !important;
+}
+
+.evodent-remove-product:hover,
+.evodent-intl-remove-product:hover {
+	color: #d63638 !important;
+}
+
+.evodent-product-search-wrap {
+	position: relative;
+}
+
+.evodent-product-search-results {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #8c8f94;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+	max-height: 280px;
+	overflow-y: auto;
+	z-index: 999999;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: none;
+}
+
+.evodent-product-search-result {
+	display: block;
+	width: 100%;
+	padding: 9px 12px;
+	border: 0;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+	text-align: left;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.evodent-product-search-result:hover {
+	background: #f0f6fc;
+}
+
+.evodent-product-search-result-name {
+	display: block;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.evodent-product-search-result-meta {
+	display: block;
+	margin-top: 3px;
+	color: #646970;
+	font-size: 12px;
+}
+
+.evodent-product-search-loading,
+.evodent-product-search-empty {
+	padding: 10px 12px;
+	color: #646970;
+	font-size: 13px;
+}
+
+.evodent-product-description {
+	margin-top: 12px;
+	padding: 0 20px 16px;
+}
+
+/* ==========================================================
+   TOTALS
+========================================================== */
+
+.evodent-totals-card {
+	max-width: 700px;
+	margin-left: auto;
+}
+
+.evodent-totals {
+	margin-left: auto;
+	max-width: 600px;
+}
+
+.evodent-total-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.evodent-total-row label {
+	font-weight: 600;
+}
+
+.evodent-total-input {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.evodent-total-input input {
+	width: 140px;
+}
+
+.evodent-discount-input {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.evodent-discount-input select {
+	min-width: 150px;
+}
+
+.evodent-discount-input input {
+	width: 120px;
+}
+
+.evodent-grand-total {
+	border-bottom: 0;
+	padding: 18px 12px;
+	font-size: 17px;
+	background: #fff7f7;
+}
+
+.evodent-grand-total strong {
+	color: #d63638;
+	font-size: 20px;
+}
+.evodent-quote-payment-notice {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d31e1e;
+	font-weight: 500;
+}
+.evodent-intl-freight-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#intl_quote_freight_option {
+    min-width: 260px;
+}
+
+.evodent-intl-freight-amount {
+    flex: 1;
+}
+/* ==========================================================
+   ACTIONS
+========================================================== */
+
+.evodent-quote-actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin: 20px 0 40px;
+}
+
+.evodent-quote-actions .button {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.evodent-quote-actions span {
+	margin-bottom: 18px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media screen and (max-width: 782px) {
+	.evodent-form-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.evodent-field-full {
+		grid-column: auto;
+	}
+
+	.evodent-totals-card {
+		max-width: none;
+	}
+
+	.evodent-quote-type-options {
+		flex-direction: column;
+	}
+
+	.evodent-quote-type-option {
+		min-width: 0;
+	}
+}
